@@ -1,0 +1,66 @@
+{
+  "test_accuracy": 0.7103,
+  "test_accuracy_pct": 71.0,
+  "cv_mean_accuracy": 0.7756,
+  "cv_mean_accuracy_pct": 77.6,
+  "cv_std_pct": 3.5,
+  "cv_folds": [
+    78.9,
+    81.9,
+    78.9,
+    76.7,
+    71.4
+  ],
+  "n_train": 1159,
+  "n_test": 290,
+  "label_distribution": {
+    "Buyer": 712,
+    "Normal": 384,
+    "Seller": 353
+  },
+  "per_class": {
+    "Seller": {
+      "precision": 0.6,
+      "recall": 0.761,
+      "f1_score": 0.671,
+      "support": 71
+    },
+    "Buyer": {
+      "precision": 0.728,
+      "recall": 0.775,
+      "f1_score": 0.751,
+      "support": 142
+    },
+    "Normal": {
+      "precision": 0.857,
+      "recall": 0.545,
+      "f1_score": 0.667,
+      "support": 77
+    }
+  },
+  "confusion_matrix": [
+    [
+      54,
+      17,
+      0
+    ],
+    [
+      25,
+      110,
+      7
+    ],
+    [
+      11,
+      24,
+      42
+    ]
+  ],
+  "confusion_labels": [
+    "Seller",
+    "Buyer",
+    "Normal"
+  ],
+  "model": "RandomForestClassifier(n_estimators=200)",
+  "features": "TF-IDF(3000,bigrams) + 12 numeric",
+  "noise_rate": 0.25
+}
